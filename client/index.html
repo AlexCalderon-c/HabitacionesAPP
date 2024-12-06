@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraíso del Descanso</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Banner con logo y título -->
+    <header>
+        <div class="container">
+            <img src="img/logo.png" alt="Logo del Hotel" class="logo">
+            <h1> Hotel Paraíso del Descanso</h1>
+        </div>
+    </header>
+
+    <!-- Sección de Reserva -->
+    <section class="reservation-form">
+        <div class="container">
+            <h2>Reserva tu habitación</h2>
+            <form action="#" method="POST">
+                <label for="check-in">Fecha de entrada:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Fecha de salida:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <label for="rooms">Número de habitaciones:</label>
+                <select id="rooms" name="rooms" required>
+                    <option value="1">1 habitación</option>
+                    <option value="2">2 habitaciones</option>
+                    <option value="3">3 habitaciones</option>
+                    <option value="4">4 habitaciones</option>
+                </select>
+
+                <label for="guests">Número de huéspedes:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hotel Paraíso del Descanso. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
