@@ -1,4 +1,5 @@
 import app from './app.js';
+import { inicializaTabla } from './models/user.model.js';
 
 const PORT = process.env.PORT || 3000;
 
